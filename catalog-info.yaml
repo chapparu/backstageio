@@ -8,4 +8,8 @@ spec:
   lifecycle: production
   owner: your-team
   providesApis:
-    - openapi: http://127.0.0.1:5000/swagger.json
+    - flask-api  # This is the API name, not the actual URL
+  links:
+    - url: "http://localhost:5000/swagger.json"
+      title: "Flask API Documentation"
+
